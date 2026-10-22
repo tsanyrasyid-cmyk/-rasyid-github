@@ -1,0 +1,51 @@
+.navbar {
+    border-radius: 0;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#main-section {
+    background-color: #999999; 
+    color: #000000;
+    padding: 15px;
+    margin-bottom: 30px;
+    height: 1000px;
+    overflow: auto;
+}
+
+h1.text-center {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav {
+        margin: 0;
+        background-color: #f8f8f8;
+        border-top: 1px solid #e7e7e7;
+    }
+    
+    .navbar-nav > li {
+        border-bottom: 1px solid #e7e7e7;
+    }
+    
+    .navbar-nav > li > a {
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+#main-section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
