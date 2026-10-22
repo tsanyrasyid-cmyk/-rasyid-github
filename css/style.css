@@ -1,51 +1,41 @@
+/* Mengatur Navbar agar tidak melengkung (khas Bootstrap 3) */
 .navbar {
     border-radius: 0;
 }
 
-body {
-    background-color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
+/* Mengatur Section Utama */
 #main-section {
-    background-color: #999999; 
-    color: #000000;
-    padding: 15px;
-    margin-bottom: 30px;
-    height: 1000px;
-    overflow: auto;
-}
-
-h1.text-center {
+    background-color: #999999; /* Warna abu-abu gelap sesuai mockup */
+    color: #000000; /* Warna teks hitam */
+    padding: 20px; /* Memberi jarak di dalam kotak agar teks tidak mepet pinggir */
     margin-top: 20px;
     margin-bottom: 30px;
-    font-weight: bold;
+    height: 1000px; /* Sengaja dibuat sangat tinggi agar muncul scrollbar */
 }
 
-@media (max-width: 767px) {
-    .navbar-nav {
-        margin: 0;
-        background-color: #f8f8f8;
-        border-top: 1px solid #e7e7e7;
-    }
-    
-    .navbar-nav > li {
-        border-bottom: 1px solid #e7e7e7;
-    }
-    
-    .navbar-nav > li > a {
-        text-align: center;
-        font-size: 16px;
-        font-weight: bold;
-    }
-    
-    .container-fluid {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-}
-
+/* Mengatur teks paragraf agar rapi */
 #main-section p {
     font-size: 16px;
     line-height: 1.6;
+}
+
+/* --- PENGATURAN UNTUK MOBILE (Layar Kecil) --- */
+@media (max-width: 767px) {
+    /* Membuat menu dropdown selebar layar dan berwarna beda */
+    .navbar-collapse {
+        background-color: #f8f8f8;
+        border-top: 1px solid #ccc;
+    }
+    
+    /* Memberi garis pemisah antar menu di HP */
+    .navbar-nav > li {
+        border-bottom: 1px solid #ccc;
+    }
+    
+    /* Membuat teks menu menjadi tebal dan di tengah */
+    .navbar-nav > li > a {
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+    }
 }
